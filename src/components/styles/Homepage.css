@@ -1,6 +1,6 @@
 .navbar {
     background-color: rgb(60, 137, 156)!important;
-    margin: 0px;
+     width: 100%;
   }
   h1{
     text-align: center;
@@ -10,4 +10,5 @@
   }
   .form-container{
     margin-top: 50px ;
+    margin-left: 20px;
   }
