@@ -1,0 +1,12 @@
+.navbar {
+    background-color: rgb(60, 137, 156)!important;
+  }
+  h1{
+    text-align: center;
+    font-family:monospace;
+    color: rgb(127, 146, 255);
+    
+  }
+  .form.container{
+    margin-top: 20px ;
+  }
