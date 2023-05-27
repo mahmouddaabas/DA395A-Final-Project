@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom';
 import './styles/Homepage.css';
+import SearchIcon from '@mui/icons-material/Search';
 
 
 export default function Homepage(props) {
@@ -39,8 +40,8 @@ export default function Homepage(props) {
 
       <div className="form-container">
         <input type="text" placeholder="Search artist.." onChange={handleInputChange} ref={searchBarRef}/>
-        <Link className='btn btn-primary' to="/search" state={{ searchValue }}>
-          Search
+        <Link to="/search" state={{ searchValue }}>
+          <SearchIcon />
         </Link>
       </div>
     </div>
