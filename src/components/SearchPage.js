@@ -1,21 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
+import axios from 'axios';
 
 export default function SearchPage() {
-  const location = useLocation();
-  const searchValue = location.state?.searchValue;
+    //State to set and save the data from the API.
+    const [data, setData] = useState([]);
 
-  console.log(process.env.REACT_APP_ACCESS_TOKEN)
+    //Use location to get the searchValue from the Link element in the Homepage component.
+    const location = useLocation();
+    const searchValue = location.state?.searchValue;
 
-  function requestDataFromAPI(){
-    //Request data based on the searchValue
-    //https://api.genius.com/search?q=searchValHere&access_token=tokenHere
-  }
 
-  return (
-    <div>
-      <h1>Search Page</h1>
-      <h2>{searchValue}</h2>
-    </div>
-  );
+    return (
+        <div>
+            <h1>Results for: {searchValue}</h1>
+            <ul id="song-list">
+
+            </ul>
+        </div>
+    );
 }

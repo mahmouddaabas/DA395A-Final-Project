@@ -4,10 +4,14 @@ import './styles/Homepage.css';
 
 
 export default function Homepage(props) {
+  //State to set and save the searchValue in the input.
   const [searchValue, setSearchValue] = useState([]);
 
+  //Set a ref for the searchBar, this is used to get the value from it.
   const searchBarRef = useRef();
 
+  //Saves the searchBar input when it changes to the state.¨
+  //The value is then passed to the SearchPage component through the Link component.
   function handleInputChange(event) {
     setSearchValue(event.target.value);
   }
