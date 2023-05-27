@@ -21,7 +21,7 @@ export default function Song(props) {
         {songData.result.full_title}
         <KeyboardArrowRightIcon style={{ color: 'blue' }} />
         </Link>
-        <img src={songData.result.song_art_image_thumbnail_url}></img>
+        <img src={songData.result.song_art_image_thumbnail_url} alt='song-img'></img>
       </li>
     </div>
   )
