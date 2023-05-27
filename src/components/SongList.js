@@ -1,12 +1,15 @@
 import React from 'react'
+import Song from './Song'
 
 export default function SongList(props) {
+
+    //Get the songs from the props.
+    const songs = props.data.response.hits;
+
     return (
         <div>
             <ul id="song-list">
-                <li>TEST</li>
-                <li>TEST</li>
-                <li>TEST</li>
+                {songs.map(song => <Song key={song.id} songData={song} />)}
             </ul>
         </div>
     )

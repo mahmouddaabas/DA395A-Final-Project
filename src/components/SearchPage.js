@@ -17,6 +17,7 @@ export default function SearchPage() {
         /*const fetchData = async () => {
             try {
               const response = await axios.get(`https://api.genius.com/search?q=${searchValue}&access_token=${process.env.REACT_APP_ACCESS_TOKEN}`);
+              //Set the data to the state and pass it to the SongList as props.
               setData(response.data.response.hits);
               console.log(data)
             } catch (error) {
@@ -27,11 +28,13 @@ export default function SearchPage() {
           fetchData();*/
     }, []);
 
+    const dummyData = require("../dummyData");
+
 
     return (
         <div>
             <h1>Results for: {searchValue}</h1>
-            <SongList data={data}/>
+            <SongList data={dummyData.getData()}/>
         </div>
     );
 }
