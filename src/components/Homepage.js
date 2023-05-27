@@ -1,30 +1,31 @@
 import React, { useState, useRef } from 'react'
+import { Link } from 'react-router-dom';
 import './styles/Homepage.css';
 
 
 export default function Homepage(props) {
-  const [searchArtist, setArtist] = useState([]);
+  const [searchValue, setSearchValue] = useState([]);
 
   const searchBarRef = useRef();
 
-  function searchMusic() {
-    console.log(searchBarRef.current.value)
+  function handleInputChange(event) {
+    setSearchValue(event.target.value);
   }
 
 
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">Home</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Saved Artists</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Saved Artists</a>
               </li>
 
             </ul>
@@ -33,8 +34,10 @@ export default function Homepage(props) {
       </nav>
 
       <div className="form-container">
-        <input type="text" placeholder="Search artist.." ref={searchBarRef}/>
-        <button type="submit" onClick={searchMusic}>Search</button>
+        <input type="text" placeholder="Search artist.." onChange={handleInputChange} ref={searchBarRef}/>
+        <Link className='btn btn-primary' to="/search" state={{ searchValue }}>
+          Search
+        </Link>
       </div>
     </div>
   );
