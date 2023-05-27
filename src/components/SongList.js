@@ -9,7 +9,7 @@ export default function SongList(props) {
     return (
         <div>
             <ul id="song-list">
-                {songs.map(song => <Song key={song.id} songData={song} />)}
+                {songs.map((song, index) => <Song key={index} songData={song} />)}
             </ul>
         </div>
     )
