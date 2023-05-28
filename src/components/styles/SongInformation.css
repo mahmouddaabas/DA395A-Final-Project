@@ -1,0 +1,21 @@
+
+h1 {
+    background-color: #3c899c!important;
+     width: 100%;
+     margin-bottom: 0;
+    
+  }
+  .information-text{
+   margin-left: 40px;
+   border-radius: 4px;
+   margin-top: 1px;
+   font-size:16px;
+   line-height: 1.5;
+   font-family:cursive;
+
+ 
+  }
+  .song-player{
+    margin-top: 20px;
+    background-color: #3c899c;
+  }

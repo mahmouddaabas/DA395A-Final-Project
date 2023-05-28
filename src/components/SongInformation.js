@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
+import './styles/SongInformation.css';
+
 
 export default function SongInformation() {
 //State to set and save data from the API Call
@@ -45,15 +47,15 @@ const data = location.state.songDataResults;
     };
   
     return songData.description?.dom.children.map((element, index) => (
-      <div key={index}>{extractText(element)} <br/></div>
+      <div className =" information-text" key={index}>{extractText(element)} <br/></div>
     ));
   }
 
   return (
-    <div>
+    <div className ="song-information">
         <h1>Reading about: {data.title} by {data.artist_names}</h1>
         {renderDescription()}
-        <iframe width="400" height="200" src={songData.apple_music_player_url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        < iframe  className ="song-player"   width="400" height="200" src={songData.apple_music_player_url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   )
 }
