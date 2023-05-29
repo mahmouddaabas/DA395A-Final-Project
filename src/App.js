@@ -4,11 +4,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Homepage from "./components/Homepage"
 import SearchPage from "./components/SearchPage";
 import SongInformation from './components/SongInformation';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Final Project</h1>
+    <div className="App container">
+      <Navbar />
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Homepage />} />

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import SongList from './SongList';
+import "../components/styles/SearchPage.css";
 
 export default function SearchPage() {
   //State to set and save the data from the API.
@@ -34,7 +35,7 @@ export default function SearchPage() {
 
 
   return (
-    <div>
+    <div className='container'>
       <h1>Results for: {searchValue}</h1>
       {
         //Dont render the SongList component if the data is undefined.
@@ -42,7 +43,7 @@ export default function SearchPage() {
       {data.length === 0 ? (
         <p>Loading...</p>
       ) : (
-        <SongList data={data} />
+        <SongList id="song-list" data={data} />
       )}
     </div>
   );
