@@ -5,6 +5,7 @@ import Homepage from "./components/Homepage"
 import SearchPage from "./components/SearchPage";
 import SongInformation from './components/SongInformation';
 import Navbar from './components/Navbar';
+import SaveArtistPage from './components/SavedSongPage';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/search' element={<SearchPage/>} />
         <Route path='/information/:songTitle' element={<SongInformation/>} />
-       
+        <Route path='/saved' element={<SaveArtistPage />} />
       </Routes>
     
       </BrowserRouter>

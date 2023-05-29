@@ -1,0 +1,15 @@
+#saved-song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+#saved-song-list li{
+    border: 1px solid white;
+    padding: 10px;
+}
+
+img {
+    width: 10%;
+}

@@ -2,12 +2,35 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import "../components/styles/Song.css";
+import PlusIcon from '@mui/icons-material/Add';
+
 
 export default function Song(props) {
 
   //Get the song data from the props and store in local variables.
   const songData = props.songData;
   const songDataResults = songData.result;
+
+  //Saves the a song and its image to the local storage.
+  function addSongToStorage(event){
+    const songName = event.target.closest('.list-group-item').textContent;
+    const songImage = event.target.closest('.list-group-item').querySelector("img").src;
+    const songToSave = {
+      songName,
+      songImage
+    }
+    let savedSongArray = JSON.parse(localStorage.getItem("savedSongs"));
+    if(savedSongArray == null){
+        savedSongArray = [];
+        savedSongArray.push(songToSave);
+        localStorage.setItem("savedSongs", JSON.stringify(savedSongArray))
+    }
+    else {
+      savedSongArray.push(songToSave);
+      localStorage.setItem("savedSongs", JSON.stringify(savedSongArray))
+    }
+    console.log(localStorage.getItem("savedSongs"))
+  }
 
   return (
     <div id='list-item'>
@@ -23,6 +46,7 @@ export default function Song(props) {
         {songData.result.full_title}
         <KeyboardArrowRightIcon style={{ color: 'blue' }} />
         </Link>
+        <PlusIcon id="save-song" onClick={addSongToStorage} style={{color: 'green'}}/>
       </li>
     </div>
   )
