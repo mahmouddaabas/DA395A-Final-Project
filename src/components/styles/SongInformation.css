@@ -3,6 +3,7 @@ h1 {
     background-color: #3c899c!important;
      width: 100%;
      margin-bottom: 0;
+     font-family: 'Courier New', Courier, monospace;
     
   }
   .information-text{
@@ -11,7 +12,8 @@ h1 {
    margin-top: 1px;
    font-size:16px;
    line-height: 1.5;
-   font-family:cursive;
+   font-family:'Courier New', Courier, monospace;
+   font-weight: bold;
 
  
   }
