@@ -46,9 +46,14 @@ const data = location.state.songDataResults;
       return '';
     };
   
-    return songData.description?.dom.children.map((element, index) => (
-      <div className =" information-text" key={index}>{extractText(element)} <br/></div>
-    ));
+    if(songData.description?.dom.children[0].children[0] == '?'){
+      return <div>No description found for this song.</div>
+    }
+    else {
+      return songData.description?.dom.children.map((element, index) => (
+        <div className =" information-text" key={index}>{extractText(element)} <br/></div>
+      ));
+    }
   }
 
   return (
