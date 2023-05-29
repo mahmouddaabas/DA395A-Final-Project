@@ -4,7 +4,7 @@ import './styles/SavedSongPage.css';
 
 export default function SavedSongPage() {
   return (
-    <div>
+    <div className="song-list">
         <h1>My saved songs</h1>
         <SavedArtistList />
     </div>
