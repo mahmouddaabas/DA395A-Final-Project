@@ -19,3 +19,9 @@ img {
     float: right;
     cursor: pointer;
 }
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1:hover{
+    color: blueviolet;
+}
