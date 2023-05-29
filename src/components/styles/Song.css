@@ -1,0 +1,15 @@
+.list-group-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#list-item li {
+    border: 25px;
+    border-color: white;
+}
+
+img {
+    width: 10%;
+    margin-right: 15px;
+}

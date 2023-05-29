@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(78, 77, 77);
+}
+
+#song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#song-list li{
+    border: 1px solid white;
+    padding: 10px;
+}
