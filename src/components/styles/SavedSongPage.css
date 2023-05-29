@@ -1,19 +1,21 @@
-body {
-    background-color: rgb(78, 77, 77);
-}
-
-#song-list {
+#saved-song-list {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin-top: 20px;
+    color: white;
 }
 
-#song-list li{
+#saved-song-list li{
     border: 1px solid white;
     padding: 10px;
 }
 
-#save-song {
+img {
+    width: 10%;
+}
+
+#delete-saved-song {
     float: right;
     cursor: pointer;
 }
