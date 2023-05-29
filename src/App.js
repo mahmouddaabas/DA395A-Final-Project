@@ -15,7 +15,9 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/search' element={<SearchPage/>} />
         <Route path='/information/:songTitle' element={<SongInformation/>} />
+       
       </Routes>
+    
       </BrowserRouter>
     </div>
   );
