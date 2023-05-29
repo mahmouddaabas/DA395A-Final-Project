@@ -17,11 +17,10 @@ export default function Homepage(props) {
     setSearchValue(event.target.value);
   }
 
-
   return (
     <div>
       <div className="form-container">
-        <input type="text" placeholder="Search artist.." onChange={handleInputChange} ref={searchBarRef}/>
+        <input  className =" search-bar"type="text" placeholder="Search artist.." onChange={handleInputChange} ref={searchBarRef}/>
         <Link to="/search" state={{ searchValue }}>
           <SearchIcon />
         </Link>

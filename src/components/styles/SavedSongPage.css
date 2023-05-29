@@ -19,3 +19,12 @@ img {
     float: right;
     cursor: pointer;
 }
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1:hover{
+    color: blueviolet;
+}
+.song-list{
+    background-color:rgb(0, 55, 100);
+}
