@@ -1,7 +1,7 @@
 import React from 'react'
 import SavedSongItem from './SavedSongItem'
 
-export default function SavedArtistList() {
+export default function SavedSongList() {
 
     //Get the saved songs in the local storage.
     const savedSongs = JSON.parse(localStorage.getItem("savedSongs"))
@@ -10,7 +10,7 @@ export default function SavedArtistList() {
   return (
     <div>
         <ul id="saved-song-list">
-            {savedSongs.map((savedSong, index) => <SavedSongItem songData={savedSong} />)}
+            {savedSongs.map((savedSong, index) => <SavedSongItem key={index} songData={savedSong} />)}
         </ul>
     </div>
   )

@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 50px;
     margin-top: 20px;
+    color: white;
 }
 
 #saved-song-list li{
@@ -12,4 +13,9 @@
 
 img {
     width: 10%;
+}
+
+#delete-saved-song {
+    float: right;
+    cursor: pointer;
 }
