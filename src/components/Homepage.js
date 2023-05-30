@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom';
-import './styles/Homepage.css';
+import './styles/HomePage.css';
 import SearchIcon from '@mui/icons-material/Search';
 
 
-export default function Homepage(props) {
+export default function HomePage(props) {
   //State to set and save the searchValue in the input.
   const [searchValue, setSearchValue] = useState([]);
 

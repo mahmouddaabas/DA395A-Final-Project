@@ -1,37 +1,49 @@
 .navbar {
-    background-color:gray!important;
-     width: 100%;
-     border: white;
-  }
-  h1{
-    text-align: center;
-    font-family:monospace;
-    color: white;
-    
-  }
-  .form-container{
-    margin-top: 50px ;
-    margin-left: 20px;
-  }
-  .nav-link{
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  .nav-link:hover{
-    color:blueviolet;
-   
-  }
-  
-  .navbar-brand{
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  .navbar-brand:hover{
-    color:blueviolet;
-  }
-  .navbar-with-border {
-    border: 1px solid white;
-  }
+  background-color: gray !important;
+  width: 100%;
+  border: white;
+}
 
+h1 {
+  text-align: center;
+  font-family: monospace;
+  color: white;
 
-  
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.navbar-with-border {
+  border: 1px solid white;
+}
+
+.search-bar {
+  width: 600px;
+  height: 40px;
+  padding: 10px;
+}
+
+#navbar{
+  margin-top: 25px;
+}
+
+#navbar a{
+  color: white;
+}
+#navbar a:hover{
+  color: yellow;
+}
