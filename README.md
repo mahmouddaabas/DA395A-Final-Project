@@ -2,7 +2,7 @@
 
 ## Instruktioner för att köra applikationen
 ```
-1. Klonade repositoryn.
+1. Klona repositoryn.
 2. Öppna en terminal i i den klonade mappen.
 3. Skriv npm install för att installera alla moduler som krävs.
 4. Skriv npm start för att starta applikationen.
