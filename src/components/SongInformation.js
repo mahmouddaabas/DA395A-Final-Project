@@ -15,7 +15,7 @@ const data = location.state.songDataResults;
   //Use effect to only call the API once.
   useEffect(() => {
     const fetchData = () => {
-      /*axios
+      axios
         .get(`https://api.genius.com${data.api_path}?access_token=${process.env.REACT_APP_ACCESS_TOKEN}`)
         .then(response => {
           setSongData(response.data.response.song);
@@ -23,12 +23,12 @@ const data = location.state.songDataResults;
         .catch(error => {
           console.error(error);
         });
-        console.log(songData)*/
+        console.log(songData)
 
         //Dummy data to prevent spamming the api.
-        const dummyData = require("../dummyData");
+        /*const dummyData = require("../dummyData");
         setSongData(dummyData.getSpecificSongInformation());
-        console.log(dummyData.getSpecificSongInformation())
+        console.log(dummyData.getSpecificSongInformation())*/
     };
 
     fetchData();
@@ -47,7 +47,7 @@ const data = location.state.songDataResults;
     };
   
     if(songData.description?.dom.children[0].children[0] == '?'){
-      return <div>No description found for this song.</div>
+      return  <div className =" information-text">No description found for this song.</div>
     }
     else {
       return songData.description?.dom.children.map((element, index) => (

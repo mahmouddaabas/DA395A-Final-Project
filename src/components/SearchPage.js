@@ -15,19 +15,19 @@ export default function SearchPage() {
   //Use effect to only call the API once.
   useEffect(() => {
     const fetchData = () => {
-      /*axios
+      axios
         .get(`https://api.genius.com/search?q=${searchValue}&access_token=${process.env.REACT_APP_ACCESS_TOKEN}`)
         .then(response => {
           setData(response.data);
         })
         .catch(error => {
           console.error(error);
-        });*/
+        });
 
         //Dummy data to prevent spamming the api.
-        const dummyData = require("../dummyData");
+        /*const dummyData = require("../dummyData");
         setData(dummyData.getData());
-        console.log(dummyData.getData())
+        console.log(dummyData.getData())*/
     };
 
     fetchData();

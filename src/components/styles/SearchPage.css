@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin-top: 25px;
 }
 
 #song-list li{
@@ -16,17 +17,5 @@ body {
 #save-song {
     float: right;
     cursor: pointer;
-}
-h1{
-    
-}
-
-.search-bar{
-width: 600px;
-height: 40px;
-padding: 10px;
-}
-.search-bar:hover{
-    background-color:cadetblue;
 }
 
