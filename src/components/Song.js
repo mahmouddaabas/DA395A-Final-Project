@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import "../components/styles/Song.css";
+import "../styles/Song.css";
 import PlusIcon from '@mui/icons-material/Add';
 
 
