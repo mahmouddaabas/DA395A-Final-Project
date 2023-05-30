@@ -1,9 +1,10 @@
 
 h1 {
-    background-color: #3c899c!important;
+    background-color:grey!important;
      width: 100%;
      margin-bottom: 0;
      font-family: 'Courier New', Courier, monospace;
+     border: 1px solid white;
     
   }
   .information-text{
@@ -13,13 +14,11 @@ h1 {
    font-size:16px;
    line-height: 1.5;
    font-family:'Courier New', Courier, monospace;
-   font-weight:  bold;
-  
-
- 
+   font-weight: bold;
+   color: white;
   }
   
   .song-player{
     margin-top: 20px;
-    background-color: #3c899c;
+    
   }

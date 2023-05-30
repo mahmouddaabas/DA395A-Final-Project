@@ -1,11 +1,12 @@
 .navbar {
-    background-color: rgb(60, 137, 156)!important;
+    background-color:gray!important;
      width: 100%;
+     border: white;
   }
   h1{
     text-align: center;
     font-family:monospace;
-    color: rgb(127, 146, 255);
+    color: white;
     
   }
   .form-container{
@@ -27,6 +28,9 @@
   }
   .navbar-brand:hover{
     color:blueviolet;
+  }
+  .navbar-with-border {
+    border: 1px solid white;
   }
 
 
