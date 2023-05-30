@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import SongList from './SongList';
-import "../components/styles/SearchPage.css";
+import "../styles/SearchPage.css";
 
 export default function SearchPage() {
   //State to set and save the data from the API.

@@ -1,6 +1,6 @@
 import React from 'react'
 import SavedArtistList from './SavedSongList';
-import './styles/SavedSongPage.css';
+import '../styles/SavedSongPage.css';
 
 export default function SavedSongPage() {
   return (

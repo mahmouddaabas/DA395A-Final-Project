@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom';
-import './styles/HomePage.css';
+import '../styles/HomePage.css';
 import SearchIcon from '@mui/icons-material/Search';
 
 

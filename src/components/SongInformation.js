@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
-import './styles/SongInformation.css';
+import '../styles/SongInformation.css';
 
 
 export default function SongInformation() {
