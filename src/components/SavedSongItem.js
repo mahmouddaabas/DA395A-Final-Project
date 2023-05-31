@@ -19,9 +19,11 @@ export default function SavedSongItem(props) {
   //Searches for a song by sending a api_path to the song through a state to the SearchInformation component.
   //SeachInformation then performs an api request based on the path and the user is navigated through the useEffect to the page to see the data.
   function searchForSong(event) {
+    const songTitle = event.target.closest('.list-group-item').textContent;
     const songApiPath = event.target.closest('.list-group-item').getAttribute('apipath');
     setSongDataResults({
       songDataResults: {
+        title: songTitle,
         api_path: songApiPath
       }
     });
