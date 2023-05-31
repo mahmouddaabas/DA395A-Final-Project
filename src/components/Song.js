@@ -31,9 +31,11 @@ export default function Song(props) {
   function addSongToStorage(event){
     const songName = event.target.closest('.list-group-item').textContent;
     const songImage = event.target.closest('.list-group-item').querySelector("img").src;
+    const songApiPath = event.target.closest('.list-group-item').getAttribute('apipath');
     const songToSave = {
       songName,
-      songImage
+      songImage,
+      songApiPath
     }
     let savedSongArray = JSON.parse(localStorage.getItem("savedSongs"));
     if(savedSongArray == null){
@@ -51,10 +53,9 @@ export default function Song(props) {
     //console.log(localStorage.getItem("savedSongs"))
   }
   
-
   return (
     <div id='list-item'>
-      <li className='list-group-item'>
+      <li className='list-group-item' apipath={songData.result.api_path}>
         {
           //Create a clickable arrow to the right every song that links to the SongInformation component (Path: /information).
           //The song title can also be clicked, it will have the same effect as the arrow.

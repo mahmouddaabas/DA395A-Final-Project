@@ -21,9 +21,11 @@ export default function HomePage(props) {
     <div>
       <div className="form-container">
         <input  className =" search-bar"type="text" placeholder="Search artist.." onChange={handleInputChange} ref={searchBarRef}/>
+        {searchValue && searchValue.length > 0 && (
         <Link to="/search" state={{ searchValue }}>
-          <SearchIcon />
+        <SearchIcon />
         </Link>
+        )}
       </div>
     </div>
   );
