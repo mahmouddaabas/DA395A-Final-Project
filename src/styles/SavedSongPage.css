@@ -11,6 +11,10 @@
     padding: 10px;
 }
 
+#saved-song-list li:hover{
+    cursor: pointer;
+}
+
 img {
     width: 10%;
 }
@@ -19,6 +23,7 @@ img {
     float: right;
     cursor: pointer;
 }
+
 h1{
     font-family: 'Courier New', Courier, monospace;
     margin-top: 25px;
