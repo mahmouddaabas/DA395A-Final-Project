@@ -3,8 +3,8 @@ import SavedSongItem from './SavedSongItem'
 
 export default function SavedSongList() {
 
-    //Get the saved songs in the local storage.
-    const savedSongs = JSON.parse(localStorage.getItem("savedSongs"))
+    //Get the saved songs in the local storage. If empty set array to []
+    const savedSongs = JSON.parse(localStorage.getItem("savedSongs")) || []
     //console.log(savedSongs)
 
   return (
